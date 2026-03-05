@@ -1,0 +1,34 @@
+ /* 1. Настройка всего фона страницы */
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Градиент */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Красивый шрифт */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Растянуть на всю высоту экрана */
+            margin: 0;
+            color: #333;
+        }
+/* Специальные стили для мобильных телефонов */
+@media (max-width: 480px) {
+    body {
+        padding: 20px; /* Добавим отступы по краям, чтобы карточка не липла к стенкам */
+        align-items: flex-start; /* На мобилках лучше начинать контент сверху, а не по центру */
+    }
+
+    .card {
+        width: 100%; /* Карточка растягивается на всю ширину */
+        max-width: none; /* Убираем ограничение в 350px */
+        padding: 20px; /* Уменьшаем внутренние отступы, чтобы сэкономить место */
+        box-sizing: border-box; /* Чтобы отступы не распирали карточку */
+    }
+
+    h1 {
+        font-size: 24px; /* Уменьшаем заголовок, чтобы он не занимал пол-экрана */
+    }
+
+    .profile-img {
+        width: 100px; /* Уменьшаем фото */
+        height: 100px;
+    }
+}

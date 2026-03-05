@@ -1,0 +1,24 @@
+  // 1. Находим нашу форму в документе по ID
+    const form = document.getElementById('contactForm');
+
+    // 2. Слушаем событие "submit" (отправка формы)
+    form.addEventListener('submit', function(event) {
+        // Останавливаем перезагрузку страницы (стандартное поведение браузера)
+        event.preventDefault();
+
+        // 3. Достаем данные из полей ввода
+        const name = form.querySelector('input[type="text"]').value;
+        const email = form.querySelector('input[type="email"]').value;
+
+        // 4. Простая логика: если имя не введено — ругаемся
+        if (name === "") {
+            alert("Пожалуйста, введите ваше имя!");
+            return;
+        }
+
+        // 5. Показываем результат пользователю
+        alert(`Спасибо, ${name}! Ваше сообщение (тестовое) отправлено. Мы свяжемся с вами по адресу ${email}.`);
+        
+        // Очищаем форму после отправки
+        form.reset();
+    });
