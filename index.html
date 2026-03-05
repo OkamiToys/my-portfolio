@@ -66,18 +66,17 @@ Open Sans
     </div>
 <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
 
-<form id="contactForm" style="text-align: left;">
-    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">Ваше имя</label>
+<form id="contactForm" action=https://formspree.io/f/xqeyzdba method="POST" style="text-align: left;">
+    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">name="name"</label>
     <input type="text" placeholder="Serhii Molchanov" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box;">
 
-    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">Ваш Email</label>
+    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">name="email"</label>
     <input type="email" placeholder="example@mail.com" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box;">
 
-    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">Сообщение</label>
+    <label style="font-size: 12px; font-weight: bold; display: block; margin-bottom: 5px;">name="message"</label>
     <textarea placeholder="Привет! Как дела?" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; height: 80px; box-sizing: border-box;"></textarea>
 
     <button type="submit" class="btn" style="width: 100%; margin-top: 15px;">Отправить сообщение</button>
 </form>
-
 </body>
 </html>
